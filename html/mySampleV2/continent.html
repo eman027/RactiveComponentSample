@@ -1,0 +1,35 @@
+<table>
+    <thead>
+        <tr>
+            <th>Continent</th>
+            <th>Number of countries</th>
+            <th>Population</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#continents}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{countries}}</td>
+            <td>{{population}}</td>
+        </tr>
+        {{/continents}}
+    </tbody>
+</table>
+
+<style>
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+tbody tr:hover {
+    background: #a4e589;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background: #82a3ce}
+tr:nth-child(odd) {background: #FFF}
+</style>
