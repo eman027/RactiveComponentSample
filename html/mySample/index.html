@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ractive component demo</title>
+</head>
+<body>
+    <h1>Sample</h1>
+    <main>
+
+    </main>
+    <script src="../../js/plugins/ractive.js"></script>
+    <script src="../../js/plugins/ractive-load.min.js"></script>
+
+    <script>
+        var myApp;
+
+        Ractive.load( 'hello-world.html' )
+            .then ( function ( HelloWorld ){
+                myApp = new HelloWorld({
+                    el: 'main',
+                    data: {
+                        name: 'Eman'
+                    }
+                });
+            });
+
+    </script>
+</body>
+</html>
